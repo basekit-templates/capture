@@ -1,4 +1,4 @@
-capture
+Capture
 =======
 
-Standard Basekit Template
+BaseKit Standard Template
