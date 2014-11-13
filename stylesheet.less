@@ -5,7 +5,77 @@
 @import "@{templateCommon}/basekit-bootstrap.less";
 @import "@{templateLocal}/css/widgets.less";
 @import "@{templateLocal}/css/ecommerce.less";
-@import "@{templateLocal}/css/owl.less";
+@import "@{templateLocal}/css/layout-header.less";
+
+// -----------------------------
+// Button Transitions
+// -----------------------------
+
+button:hover, .blog-list-footer a:hover, .blog-post-more-link a:hover, button.btn:hover, .widget.tweet a:hover, .widget.socialicons span a:hover, .widget.button.paypal:hover, .widget.blogsearch button:hover, .widget.ecomproduct .ecom-product .btn:hover, .widget.ecombasket .ecombasket-pull:hover {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.blog-post-sharing {
+    margin-top: 20px;
+    .btn.facebook {
+        background-color: #3B5998;
+        &:hover {
+            background-color:darken(#3B5998, 10%);
+        }
+    }
+    .btn.twitter {
+        background-color: #00ACED;
+        &:hover {
+            background-color:darken(#00ACED, 10%);
+        }
+    }
+    .btn.googleplus {
+        background-color: #dd4b39;
+        &:hover {
+            background-color:darken(#dd4b39, 10%);
+        }
+    }
+}
+
+.widget.extendednavigation ul li a:hover, .widget.extendednavigation ul li.folder .text:hover {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+// ------------------------------------------
+// #Default page sticky footer
+// ------------------------------------------
+
+.bk-default {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;    
+    min-height: 100vh;
+    flex-direction: column;
+     -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    @media @tablet {
+        display: initial;
+    }
+}
+
+.bk-default .page-wrap {
+    flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
 
 // -----------------------------
 // Page Settings
@@ -59,6 +129,10 @@ h2 {
     }
 }
 
+.bk-default .mainzone {
+    padding-top:20px;
+}
+
 /*  ===============================
     Header
     =============================== */
@@ -106,7 +180,6 @@ header.bk-header {
         display: inline-block;
         vertical-align: middle;
         float:right;
-        padding-top:20px;
     }
 }
 
@@ -361,7 +434,7 @@ footer .widget.profile .bk-profile-socialicons span a:hover {
 }
 
 .responsivecolumns .columns-two-right, .columns-two-50-50 .columns-two-right {
-    padding:42px 0px;
+    padding:36px 0px;
 }
 
 footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, .widget.profile p {

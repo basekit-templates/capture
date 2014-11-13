@@ -1,4 +1,4 @@
 Capture
 =======
 
-BaseKit Standard Template
+BaseKit Standard Theme

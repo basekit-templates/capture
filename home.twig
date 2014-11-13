@@ -5,9 +5,11 @@
 
 <header class="bk-header">
     <div class="companyheader page-wrap clearfix">
-        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-        {{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
+        <div class="flex-container">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            {{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
+       
     </div>
 </header>         
 
@@ -26,7 +28,7 @@
 </section>
 
 <div class="page-wrap">
-	<div class="mainzone headerwrapper">
+	<div class="mainzone">
 		{{zone('main')|raw}}
 	</div>
 </div>
