@@ -8,76 +8,6 @@
 @import "@{templateLocal}/css/layout-header.less";
 
 // -----------------------------
-// Button Transitions
-// -----------------------------
-
-button:hover, .blog-list-footer a:hover, .widget.profile .bk-profile-socialicons span a:hover, .blog-post-more-link a:hover, button.btn:hover, .widget.tweet a:hover, .widget.socialicons span a:hover, .widget.button.paypal:hover, .widget.blogsearch button:hover, .widget.ecomproduct .ecom-product .btn:hover, .widget.ecombasket .ecombasket-pull:hover {
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-.blog-post-sharing {
-    margin-top: 20px;
-    .btn.facebook {
-        background-color: #3B5998;
-        &:hover {
-            background-color:darken(#3B5998, 10%);
-        }
-    }
-    .btn.twitter {
-        background-color: #00ACED;
-        &:hover {
-            background-color:darken(#00ACED, 10%);
-        }
-    }
-    .btn.googleplus {
-        background-color: #dd4b39;
-        &:hover {
-            background-color:darken(#dd4b39, 10%);
-        }
-    }
-}
-
-.widget.extendednavigation ul li a:hover, .widget.extendednavigation ul li.folder .text:hover {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-// ------------------------------------------
-// #Default page sticky footer
-// ------------------------------------------
-
-.bk-default {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;    
-    min-height: 100vh;
-    flex-direction: column;
-     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    @media @tablet {
-        display: initial;
-    }
-}
-
-.bk-default .page-wrap {
-    flex: 1;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-}
-
-// -----------------------------
 // Page Settings
 // -----------------------------
 
@@ -133,9 +63,9 @@ h2 {
     padding-top:20px;
 }
 
-/*  ===============================
-    Header
-    =============================== */
+// -----------------------------
+// Header
+// -----------------------------
 
 header.bk-header {
     background-color:@color-swatch4;
@@ -183,50 +113,9 @@ header.bk-header {
     }
 }
 
-/*  ===============================
-    GALLERY TRANSITION
-    =============================== */
-
-.view-fifth img {
-    transition: all 0.3s ease-in-out; 
-}
-
-.view-fifth .mask { 
-    background-color: rgba(146,96,91,0.3);
-    transform: translateX(-300px);
-    opacity: 1;
-    transition: all 0.4s ease-in-out; 
-}
-
-.view-fifth h2{
-    background: rgba(255, 255, 255, 0.5);
-    color: #000;
-    box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
-}
-
-.view-fifth p{
-    opacity: 0;
-    color: #333;
-    transition: all 0.2s linear;
-}
-
-.view-fifth:hover .mask { 
-    transform: translateX(0px);
-}         
-
-.view-fifth:hover img { 
-    transform: translateX(300px);
-    transition-delay: 0.1s;
-}
-
-.view-fifth:hover p{
-    opacity: 1;
-    transition-delay: 0.4s;
-}
-
-/*  ===============================
-    Extended Navigation
-    =============================== */
+// -----------------------------
+// Extended Navigation
+// -----------------------------
 
 .nav-container {
     display: block;
@@ -274,6 +163,10 @@ header.bk-header {
             }
         }
     }
+}
+
+.widget.extendednavigation .bk-overlay {
+    width: 100%;
 }
 
 .extendednavigation li.selected {
@@ -365,6 +258,76 @@ header.bk-header {
 }
 
 // -----------------------------
+// Button Transitions
+// -----------------------------
+
+button:hover, .blog-list-footer a:hover, .widget.profile .bk-profile-socialicons span a:hover, .blog-post-more-link a:hover, button.btn:hover, .widget.tweet a:hover, .widget.socialicons span a:hover, .widget.button.paypal:hover, .widget.blogsearch button:hover, .widget.ecomproduct .ecom-product .btn:hover, .widget.ecombasket .ecombasket-pull:hover {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.blog-post-sharing {
+    margin-top: 20px;
+    .btn.facebook {
+        background-color: #3B5998;
+        &:hover {
+            background-color:darken(#3B5998, 10%);
+        }
+    }
+    .btn.twitter {
+        background-color: #00ACED;
+        &:hover {
+            background-color:darken(#00ACED, 10%);
+        }
+    }
+    .btn.googleplus {
+        background-color: #dd4b39;
+        &:hover {
+            background-color:darken(#dd4b39, 10%);
+        }
+    }
+}
+
+.widget.extendednavigation ul li a:hover, .widget.extendednavigation ul li.folder .text:hover {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+// ------------------------------------------
+// #Default page sticky footer
+// ------------------------------------------
+
+.bk-default {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;    
+    min-height: 100vh;
+    flex-direction: column;
+     -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    @media @tablet {
+        display: initial;
+    }
+}
+
+.bk-default .page-wrap {
+    flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+// -----------------------------
 // Footer
 // -----------------------------
 
@@ -431,13 +394,21 @@ footer .widget.profile .bk-profile-socialicons span a:hover {
     }
 }
 
-.responsivecolumns .columns-two-left, .columns-two-50-50 .columns-two-left {
+.footer-left {
     background-color:@color-swatch3;
     padding:60px 0px;
 }
 
-.responsivecolumns .columns-two-right, .columns-two-50-50 .columns-two-right {
-    padding:36px 0px;
+.footer-right {
+    padding:40px 0px;
+    @media @mobile {
+        margin: 0px auto;
+        display: table;
+    }
+}
+
+.responsivecolumns .columns-two-left, .columns-two-50-50 .columns-two-left {
+    margin-bottom:0;
 }
 
 footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, .widget.profile p {

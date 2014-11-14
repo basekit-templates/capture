@@ -9,7 +9,7 @@
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
             {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
             {{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
-       
+        </div>
     </div>
 </header>         
 
@@ -37,10 +37,14 @@
     <div class="page-wrap clearfix">
         <div class="responsivecolumns columns-two-50-50">
             <div class="column columns-two-left">
-                {{widget('profile', 'footer-profile', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
+                <div class="footer-left">
+                    {{widget('profile', 'footer-profile', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
+                </div>
             </div>
             <div class="column columns-two-right">
-                {{widget('companyname', 'footercompanyname', {"business": "profile"})|raw}}
+                <div class="footer-right">
+                    {{widget('companyname', 'footercompanyname', {"business": "profile"})|raw}}
+                </div>
             </div>
         </div>
     </div>
