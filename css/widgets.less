@@ -529,19 +529,16 @@ button:hover, .widget.button button:hover {
    				color: #fff;
    				display: block;
 				text-align: center;
-					    &:after {
-        border-top: 3px solid @color-swatch3;
-        content: "";
-        display: block;
-        position: relative;
-        margin: 10px auto 5px;
-        min-width: 80px;
-        max-width: 200px;
-        width: 18%;
-    }
-   				@media @mobile {
-   					display:none;
-   				}
+					&:after {
+        				border-top: 3px solid @color-swatch3;
+        				content: "";
+        				display: block;
+        				position: relative;
+        				margin: 10px auto 5px;
+        				min-width: 80px;
+        				max-width: 200px;
+        				width: 18%;
+    				}
             }
             .description {
                 font-size: 16px;
@@ -554,9 +551,6 @@ button:hover, .widget.button button:hover {
    				-o-transition: all 0.2s linear;
    				-ms-transition: all 0.2s linear;
    				transition: all 0.2s linear;
-   				@media @mobile {
-   					display:none;
-   				}
    					&:hover {
    						-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
    						filter: alpha(opacity=100);

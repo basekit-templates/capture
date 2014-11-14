@@ -11,7 +11,7 @@
 // Button Transitions
 // -----------------------------
 
-button:hover, .blog-list-footer a:hover, .blog-post-more-link a:hover, button.btn:hover, .widget.tweet a:hover, .widget.socialicons span a:hover, .widget.button.paypal:hover, .widget.blogsearch button:hover, .widget.ecomproduct .ecom-product .btn:hover, .widget.ecombasket .ecombasket-pull:hover {
+button:hover, .blog-list-footer a:hover, .widget.profile .bk-profile-socialicons span a:hover, .blog-post-more-link a:hover, button.btn:hover, .widget.tweet a:hover, .widget.socialicons span a:hover, .widget.button.paypal:hover, .widget.blogsearch button:hover, .widget.ecomproduct .ecom-product .btn:hover, .widget.ecombasket .ecombasket-pull:hover {
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -402,6 +402,9 @@ footer.bk-footer {
 
 footer .widget.profile .bk-profile-socialicons span a:hover {
     background-color:@color-swatch3;
+    &:hover {
+        background-color:darken(@color-swatch3,20%);
+    }
 }
 
 .widget.profile .bk-profile-socialicons {
@@ -446,4 +449,11 @@ footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, 
 
 footer.bk-footer .widget.companyname {
     padding-top:10px;
+}
+
+footer.bk-footer .page-wrap {
+    @media @mobile {
+        width:100%;
+        margin:0;
+    }
 }
