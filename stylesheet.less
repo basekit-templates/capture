@@ -118,11 +118,14 @@ header.bk-header {
 .widget.extendednavigation {
     position: relative;
     float:right;
+    @media @tablet {
+        top: -30px;
+    }
     ul {
         width:100%;
         position: relative;
         @media @tablet {
-            padding-top:10px;
+            padding-top:60px;
         }
         li {
             padding:0;
@@ -145,9 +148,6 @@ header.bk-header {
     }
 }
 
-.widget.extendednavigation .bk-overlay {
-    width: 100%!important;
-}
 
 .extendednavigation li.selected {
     a, .text {
