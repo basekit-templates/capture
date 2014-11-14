@@ -533,11 +533,17 @@ button:hover, .widget.button button:hover {
                 display: block;
             }
             .title {
-                font-size: 19px;
-                font-weight: 600;
-                line-height: 26px;
-   				color: #fff;
+				color: @font-swatch8-color;
+				font-family: @font-swatch8-font-family;
+				font-size: @font-swatch8-font-size;
+				font-weight: @font-swatch8-font-weight;
+				line-height: @font-swatch8-line-height;
+				letter-spacing: @font-swatch8-letter-spacing;
 				text-align: center;
+				@media @mobile {
+					font-size: (@font-swatch10-font-size * 0.6);
+					line-height: (@font-swatch10-font-size * 0.6);
+				}
 					&:after {
         				content: "";
         				display: block;
@@ -549,11 +555,14 @@ button:hover, .widget.button button:hover {
     				}
             }
             .description {
-                font-size: 16px;
-                line-height: 20px;
-                -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+				color: @font-swatch9-color;
+				font-family: @font-swatch9-font-family;
+				font-size: @font-swatch9-font-size;
+				font-weight: @font-swatch9-font-weight;
+				line-height: @font-swatch9-line-height;
+				letter-spacing: @font-swatch9-letter-spacing;
+           	    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
    				filter: alpha(opacity=0);
-   				color: #fff;
    				-webkit-transition: all 0.2s linear;
    				-moz-transition: all 0.2s linear;
    				-o-transition: all 0.2s linear;
@@ -564,10 +573,13 @@ button:hover, .widget.button button:hover {
    						filter: alpha(opacity=100);
    						opacity: 1;
    				}
+   				@media @mobile {
+   					display:none;
+   				}
             }
             &:hover {
             	.image-data {
-            		background-color: fade(@color-swatch3, 90%);
+            		background-color: fade(@color-swatch4, 70%);
             		display: -webkit-box;
 					display: -moz-box;
 					display: -ms-flexbox;
@@ -663,7 +675,7 @@ button:hover, .widget.button button:hover {
 				margin: 2px auto 0;
 				width: 35%;
 				height: 2px;
-				background: fade(@color-swatch1, 40%);
+				background: @color-swatch3;
 				content: '';
 				-webkit-transform: translate3d(0,40px,0);
 				transform: translate3d(0,40px,0);
@@ -709,8 +721,8 @@ button:hover, .widget.button button:hover {
 	}
 }
 
-.gallery .image-data {
-	background-color:fade(@color-swatch4,70%);
+.widget.gallery .title {
+	margin-bottom:0;
 }
 
 // -----------------------------
