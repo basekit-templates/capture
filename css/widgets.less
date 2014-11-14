@@ -180,6 +180,7 @@ button.btn,
 .widget.profile form button {
 	background-color:@color-swatch4;
     color:@font-swatch7-color;
+    padding:11px 14px 10px;
 }
 
 .signupform fieldset button {
@@ -326,6 +327,8 @@ button:hover, .widget.button button:hover {
 
 .widget.profile ul.twitter p {
 	text-align:left;
+	font-size:@font-swatch7-color;
+	padding: 0px 20px;
 }
 
 .twitter ul li a {
@@ -528,7 +531,6 @@ button:hover, .widget.button button:hover {
    				color: #fff;
 				text-align: center;
 					&:after {
-        				border-top: 3px solid @color-swatch3;
         				content: "";
         				display: block;
         				position: relative;
@@ -571,31 +573,28 @@ button:hover, .widget.button button:hover {
     }
 
 
-    	.image-data {
-			background-color: fade(@color-swatch3, 0%);
-			display: flex;
-		    flex-direction: column;
-		    flex-wrap: nowrap;
-		    justify-content: center;
-		    align-content: center;
-		    align-items: center;
-			
-
-
-			&:before {
-				position: absolute;
-				top: 30px;
-				right: 30px;
-				bottom: 30px;
-				left: 30px;
-				content: '';
-				opacity: 0;
-				-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-				transition: opacity 0.35s, transform 0.35s;
-				border-top: 1px solid #fff;
-				border-bottom: 1px solid #fff;
-				-webkit-transform: scale(0,1);
-				transform: scale(0,1);
+    .image-data {
+		background-color: fade(@color-swatch3, 0%);
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		&:before {
+			position: absolute;
+			top: 30px;
+			right: 30px;
+			bottom: 30px;
+			left: 30px;
+			content: '';
+			opacity: 0;
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.35s, transform 0.35s;
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			-webkit-transform: scale(0,1);
+			transform: scale(0,1);
 			}
 			&:after {
 				position: absolute;
@@ -629,8 +628,8 @@ button:hover, .widget.button button:hover {
 				right: 0;
 				margin: 2px auto 0;
 				width: 35%;
-				height: 3px;
-				background: #fff;
+				height: 2px;
+				background: fade(@color-swatch1, 40%);
 				content: '';
 				-webkit-transform: translate3d(0,40px,0);
 				transform: translate3d(0,40px,0);

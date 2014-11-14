@@ -83,11 +83,11 @@ header.bk-header {
 /* COMPANY NAME */
 
 .widget.companyname {
-  display: block;
+    display: block;
 }
 
 .companyname a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .widget.companyname a {
@@ -101,15 +101,13 @@ header.bk-header {
 
 .widget.logo {
   display: block;
-  margin-left: 10px;
-  padding-top: 6px;
 }
 
 .widget {
     &.logo, &.companyname {
         display: inline-block;
         vertical-align: middle;
-        float:right;
+        float:left;
     }
 }
 
@@ -133,8 +131,7 @@ header.bk-header {
 
 .widget.extendednavigation {
     position: relative;
-    width: 68%;
-    float:left;
+    float:right;
     @media @tablet {
         width:100%;
     }
@@ -166,7 +163,7 @@ header.bk-header {
 }
 
 .widget.extendednavigation .bk-overlay {
-    width: 100%;
+    width: 100%!important;
 }
 
 .extendednavigation li.selected {
@@ -232,6 +229,7 @@ header.bk-header {
     cursor: pointer;
     outline: none;
     padding: 0;
+    top:-37px;
 }
 
 .widget .extendednavigation a.pull:after {
@@ -241,7 +239,6 @@ header.bk-header {
     height: 35px;
     top: 0;
     right: 0;
-    left: 0;
     @media @tablet {
         box-shadow:none;
         background: image('/images/nav-icon.png');
@@ -341,7 +338,11 @@ footer.bk-footer {
 .left-footer .widget.content h4, 
 .left-footer .widget.content p, 
 .left-footer .widget.content span,
-.left-footer .widget.content a,  
+.left-footer .widget.content a, {
+    color:@font-swatch4-color;
+    font-weight:@font-swatch7-font-weight;
+}
+
 .right-footer .widget.profile span, 
 .right-footer .widget.profile p, 
 .right-footer .widget.profile a {
@@ -378,10 +379,14 @@ footer .widget.profile .bk-profile-socialicons span a:hover {
   text-align:center;
 }
 
-.bk-profile-address p {
-    color: @font-swatch1-color;
-    float:left!important;
-    padding-right:5px;
+.bk-profile-address {
+    margin:0px auto;
+    display:table;
+        p {
+        color: @font-swatch1-color;
+        float:left!important;
+        padding-right:5px;
+    }
 }
 
 .fb_iframe_widget_fluid span, .fb_iframe_widget iframe {
