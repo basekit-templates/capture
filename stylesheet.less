@@ -133,7 +133,11 @@ header.bk-header {
     position: relative;
     float:right;
     @media @tablet {
-        width:100%;
+        width:6%;
+        margin-top:10px;
+    }
+    @media @mobile {
+        width:15%;
     }
     ul {
         width:100%;
@@ -229,7 +233,7 @@ header.bk-header {
     cursor: pointer;
     outline: none;
     padding: 0;
-    top:-37px;
+    top:0;
 }
 
 .widget .extendednavigation a.pull:after {
@@ -360,7 +364,7 @@ footer.bk-footer {
 
 .bk-footer .widget.profile {
     text-align: center;
-    color: @color-swatch1;
+    color: @font-swatch4-color;
     font-weight: 400;
 }
 
@@ -386,6 +390,16 @@ footer .widget.profile .bk-profile-socialicons span a:hover {
         color: @font-swatch1-color;
         float:left!important;
         padding-right:5px;
+        &:after {
+            content: ",";
+            margin-left: -0.2em;
+        }
+    }
+}
+
+.bk-profile-address p {
+    &:last-child:after {
+        content:none;
     }
 }
 

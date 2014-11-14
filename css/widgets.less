@@ -340,6 +340,12 @@ button:hover, .widget.button button:hover {
     line-height:60px;
 }
 
+.twitter .twitter-content p a {
+	word-break: break-all;
+	color: #000;
+	text-decoration: underline;
+}
+
 // -----------------------------
 // Line
 // -----------------------------
@@ -458,9 +464,11 @@ button:hover, .widget.button button:hover {
 	width:100%;
 	@media @tablet {
 		font-size:bkscale(@font-swatch8-font-size, 0.6);
+		line-height:bkscale(@font-swatch8-line-height, 0.6);
 	}
 	@media @mobile {
 		font-size:bkscale(@font-swatch8-font-size, 0.5);
+		line-height:bkscale(@font-swatch8-line-height, 0.5);
 		padding-bottom:0;
 	}
 }
@@ -470,7 +478,7 @@ button:hover, .widget.button button:hover {
 	width:100%;
 	@media @tablet {
 		font-size:bkscale(@font-swatch9-font-size, 0.6);
-		line-height:bkscale(@font-swatch9-line-height, 0.8);
+		line-height:bkscale(@font-swatch9-line-height, 0.9);
 		padding-bottom: 5px;
 	}
 	@media @mobile {
@@ -1002,6 +1010,10 @@ button:hover, .widget.button button:hover {
 }
 
 // Social Icons
+
+.widget.socialicons {
+	.clearfix
+}
 
 .widget.socialicons, .widget.profile .bk-profile-socialicons {
   min-height:32px;
