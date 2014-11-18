@@ -7,10 +7,14 @@
     <header class="bk-header">
         <div class="companyheader page-wrap clearfix">
             <div class="flex-container">
-                {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-                {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            <div class="nav">
                 {{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
             </div>
+            <div class="company-info">
+                {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+                {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            </div>
+        </div>
         </div>
     </header>         
     
