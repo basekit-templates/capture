@@ -585,7 +585,7 @@ button:hover, .widget.button button:hover {
 					display: -ms-flexbox;
 					display: -webkit-flex;
 					display: flex;
-					
+					padding: 50px;
 					&:before, &:after {
 						-webkit-transform: scale(1,1);
 						transform: scale(1,1);
@@ -723,6 +723,12 @@ button:hover, .widget.button button:hover {
 
 .widget.gallery .title {
 	margin-bottom:0;
+}
+
+.widget.gallery li span.inner .description {
+@media (max-width: 500px) {
+	display:none;
+}
 }
 
 // -----------------------------
@@ -1017,7 +1023,7 @@ button:hover, .widget.button button:hover {
         }
 	}
 	button {
-		padding:11px 15px;
+		padding:11px 15px 10px;
 		&:hover {
 			cursor: pointer;
 			background-color:@font-swatch7-background-color-hover;
