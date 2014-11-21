@@ -49,6 +49,10 @@ ul, li {
     padding-top:20px;
 }
 
+.mainzone {
+    padding-top:20px;
+}
+
 // -----------------------------
 // Header
 // -----------------------------
@@ -70,6 +74,11 @@ header.bk-header {
 
 .widget.companyname {
     display: block;
+    @media @tablet {
+        margin:0px auto;
+        display:table;
+        text-align:center;
+    }
 }
 
 .companyname a:hover {
@@ -143,6 +152,9 @@ header.bk-header {
     }
 }
 
+.extendednavigation {
+    .clearfix
+}
 
 .extendednavigation li.selected {
     a, .text {
@@ -230,7 +242,10 @@ header.bk-header {
 // Button Transitions
 // -----------------------------
 
-button:hover, .blog-list-footer a:hover, .basket-summary-empty-cta.btn:hover, .widget.profile .bk-profile-socialicons span a:hover, .blog-post-more-link a:hover, button.btn:hover, .widget.tweet a:hover, .widget.socialicons span a:hover, .widget.button.paypal:hover, .widget.blogsearch button:hover, .widget.ecomproduct .ecom-product .btn:hover, .widget.ecombasket .ecombasket-pull:hover {
+button:hover, .blog-list-footer a:hover, .basket-summary-empty-cta.btn:hover, 
+.widget.profile .bk-profile-socialicons span a:hover, .blog-post-more-link a:hover, 
+button.btn:hover, .widget.tweet a:hover, .widget.socialicons span a:hover, 
+.widget.button.paypal:hover, .widget.blogsearch button:hover, .widget.ecombasket .ecombasket-pull:hover {
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -380,7 +395,7 @@ footer .widget.profile .bk-profile-socialicons span a:hover {
 
 .footer-left {
     background-color:@color-swatch3;
-    padding:60px 0px;
+    padding:60px;
 }
 
 .footer-right {
