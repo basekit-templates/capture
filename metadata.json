@@ -1,7 +1,7 @@
 {
 	"name":"Capture",
 	"thumbnail":"capture.png",
-	"screenshot":"capture.png",
+	"screenshot":"capture-screenshot.jpg",
     "tags": { "en": ["minimal", "clean", "gallery", "blue", "portfolio", "technology", "camera", "images", "modern", "design"] },
     "pageTypes":["home"],
     "templateType":"standard",
