@@ -1,5 +1,6 @@
 {
 	"name":"Capture",
+	"versionTenCompatible": 1,
 	"thumbnail":"capture.png",
 	"screenshot":"capture-screenshot.jpg",
     "tags": { "en": ["minimal", "clean", "gallery", "blue", "portfolio", "technology", "camera", "images", "modern", "design"] },
